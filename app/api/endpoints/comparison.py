@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 @router.post(
-    "/compare-images/",
+    "/compare-faces/",
     response_model=ComparisonResponse,
     responses={
         413: {"model": ErrorResponse, "description": "File too large"},
